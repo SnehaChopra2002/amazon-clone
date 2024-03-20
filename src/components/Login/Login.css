@@ -1,0 +1,111 @@
+/* .login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background: white;
+}
+
+.login__logo{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    object-fit: contain;
+    width: 100px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.login__container{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: fit-content;
+    padding: 20px;
+} */
+
+/* Login.css */
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .login__logo {
+    width: 100px;
+    object-fit: contain;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .login__container {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  .login__container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .login__container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login__container h5 {
+    margin-bottom: 5px;
+  }
+  
+  .login__container input {
+    height: 30px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+  }
+  
+  .login__signInButton,
+  .login__registerButton {
+    background-color: #f0c14b;
+    border: 1px solid #a88734;
+    color: #111;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .login__signInButton:hover,
+  .login__registerButton:hover {
+    background-color: #ddb347;
+  }
+
+  .login__registerButton {
+    width: 100%; /* Make button occupy full width */
+  }
+
+  .separator {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .separator__line {
+    flex: 1;
+    height: 1px;
+    background-color: #ccc;
+  }
+  
+  .separator span {
+    margin: 0 10px;
+    background-color: #fff;
+  }
+  
