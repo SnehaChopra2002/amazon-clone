@@ -1,0 +1,65 @@
+.payment {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    background-color: #f0f2f2;
+}
+
+.payment__container {
+    width: 90%;
+    max-width: 800px;
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.payment__container h1{
+    text-align: center;
+    padding: 15px 0;
+    font-weight: 500;
+    background-color: #e0e5e5;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.payment__section {
+    margin-bottom: 30px;
+}
+
+.payment__title {
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ddd;
+}
+
+.payment__title h3 {
+    font-weight: 500;
+    color: #333;
+}
+
+.payment__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.payment__items img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.payment__address p {
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #555;
+}
+
+.payment__details {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}

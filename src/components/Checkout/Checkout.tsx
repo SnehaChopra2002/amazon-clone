@@ -16,9 +16,11 @@ const Checkout = () => {
         <div>
           <h3>Hello, {user?user.email:'Guest'}</h3>
           <h2 className="checkout__title">Your Shopping Basket</h2>
-          {products.map((prod)=>(
-            <CheckoutProduct id={prod.id} title={prod.title} price={prod.price} image={prod.image} rating={prod.rating}/>
-          ))}
+          
+            {products.map((prod)=>(
+              <CheckoutProduct key={prod.id} id={prod.id} title={prod.title} price={prod.price} image={prod.image} rating={prod.rating}/>
+            ))}
+          
         </div>
       </div>
 

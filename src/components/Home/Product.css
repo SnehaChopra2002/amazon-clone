@@ -1,53 +1,64 @@
-.product{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    margin: 10px;
-    padding: 20px;
-    width: 100%;
-    max-height: 400px;
-    min-width: 100px;
-    background:white;
-    z-index: 1;
+/* Main container of the product card with shadow and rounded corners */
+.product {
+  width: 280px; /* Adjusted width of the product card */
+  background: #ffffff; /* White background color */
+  border-radius: 8px; /* Smooth rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for 3D effect */
+  overflow: hidden; /* Ensures no content spills outside */
+  display: flex; /* Using flexbox */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center align the items */
+  padding: 20px; /* Padding around the content */
+  margin: 20px; /* Margin for outer spacing */
 }
 
-.product > img{
-    max-height: 200px;
-    width: 100%;
-    object-fit: contain;
-    margin-bottom: 15px;
+/* Title of the product with emphasis */
+.product__info {
+  color: #333; /* Dark grey for better readability */
+  font-size: 20px; /* Slightly larger font size */
+  font-weight: 700; /* Bold font weight */
+  margin-top: 10px; /* Top margin */
+  margin-bottom: 5px; /* Bottom margin */
 }
 
-.product__price{
-    margin-top: 5px;
+/* Price styling with currency symbol smaller */
+.product__price {
+  font-size: 18px; /* Font size for price */
+  color: #666; /* Dark grey color */
+  margin-bottom: 10px; /* Bottom margin */
 }
 
-.product__rating{
-    display: flex;
+.product__price small {
+  font-size: 75%; /* Smaller font size for currency symbol */
 }
 
-.product__info{
-    height:100px;
-    margin-bottom: 15px;
+/* Rating with stars */
+.product__rating {
+  margin-bottom: 15px; /* Space below rating before image */
+  display: flex;
 }
 
-/* .product>button{
-    background: #f0c14b;
-    border: 1px solid ;
-    margin-top: 10px;
-    border-color: #a88734 #9c7e31 #846a29;
-    color: #111;
-} */
+/* Styling for the product image */
+.product img {
+  width: 100%; /* Full width */
+  object-fit: cover; /* Cover fit to maintain aspect ratio */
+  height: 160px; /* Fixed height */
+  margin-bottom: 15px; /* Space below the image */
+}
 
-.product>button {
-  border-radius: 4px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background: #f0c14b;
-  cursor: pointer;
-  transition: border-color 0.30;
+/* Button with a modern look */
+button {
+  border: none; /* No border */
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  text-transform: uppercase; /* Uppercase text */
+  padding: 12px 24px; /* Padding around text */
+  font-weight: bold; /* Bold font */
+  border-radius: 4px; /* Rounded button corners */
+  cursor: pointer; /* Pointer on hover */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+button:hover {
+  background-color: #cc7a00; /* Darker shade on hover */
 }

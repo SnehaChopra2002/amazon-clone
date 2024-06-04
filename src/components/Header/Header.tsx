@@ -41,7 +41,7 @@ const Header = () => {
       <div className="header__nav">
         <Link to={currentUser?'/':'/login'}>
           <div onClick={handleAuthentication} className="header__option">
-            <span className="header__lineOne">Hello Guest</span>
+            <span className="header__lineOne">Hello {currentUser?currentUser.email:'Guest'}</span>
             <span className="header__lineTwo">{currentUser?'Sign Out':'Sign In'}</span>
           </div>
         </Link>

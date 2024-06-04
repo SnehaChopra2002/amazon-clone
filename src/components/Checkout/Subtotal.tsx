@@ -1,10 +1,16 @@
 import { useSelector } from "react-redux"
 import "./Subtotal.css"
 import { ArticleState } from "../../type"
+import { useHistory } from "react-router-dom"
 
 const Subtotal = () => {
   const products = useSelector((state:ArticleState)=>state.articles)
   const totalPrice=products.reduce((sum,prod)=>sum+prod.price,0)
+  const history = useHistory();
+  const handleButtonClick = () => {
+    history.push("/payments");
+  };
+  
   return (
     <div className="subtotal">
         <>
@@ -15,7 +21,7 @@ const Subtotal = () => {
                 <input type="checkbox" />This order contains a gift
             </small>
 
-            <button>Proceed to Checkout</button>
+            <button onClick={handleButtonClick}>Proceed to Checkout</button>
         </>
     </div>
   )

@@ -23,6 +23,7 @@
     flex: 0.3;
     padding: 20px;
     background-color: white;
+    margin-right: 2px;
   }
   
   /* Style for CheckoutProduct component */
